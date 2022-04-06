@@ -1,5 +1,120 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: hsla(0, 100%, 100%, 0.88);
+  --backgound-color: #181818;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: var(--backgound-color);
+}
+input {
+  outline: 0px;
+  border: 0px;
+}
+
+/* ------------------------------------------------- */
+/* ---------------NAVBAR---------------------------- */
+/* ------------------------------------------------ */
+
+.navbar {
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 53.3%, 0.4);
+}
+
+.navbar__image {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* left-Container */
+.navbar__left-container {
+  display: flex;
+  align-items: center;
+}
+.navbar__left-container_logo {
+  width: 90px;
+  height: 20px;
+}
+
+/* Center-Container */
+.navbar__center-container {
+  display: flex;
+  align-items: center;
+}
+.navbar__center-container__search-input {
+  padding: 1px 5px;
+  color: var(--white);
+  height: 40px;
+  width: 385px;
+  background-color: var(--black);
+  text-align: left;
+}
+.navbar__center-container__search-input:focus-visible {
+  border: 1px solid rgb(4, 96, 175);
+  border-radius: 2px 0 0 2px;
+}
+.navbar__center-container__search-input::placeholder {
+  color: var(--grey);
+  font-family: "Roboto", "Noto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar-center-container__search-icon {
+  margin-right: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-radius: 0 2px 2px 0;
+}
+.navbar-center-container__search-icon .navbar__image {
+  margin-right: 0px;
+}
+.navbar-container__mic-icon {
+  background-color: #000;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.navbar-container__mic-icon_icon {
+  margin: 8px 0px 0px 8px;
+}
+/* Right-Container */
+.navbar__right-container {
+  display: flex;
+  align-items: center;
+}
+.navbar__right-container .navbar__image {
+  margin-right: 30px;
+}
+.navbar__right-container__profile-img_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.navbar__right-container__profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.navbar__right-container__profile-img_icon {
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
 }
