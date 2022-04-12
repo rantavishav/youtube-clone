@@ -47,6 +47,12 @@ img {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #4a4a4a;
 }
+.m-h-hide {
+  display: block;
+}
+.m-h-show {
+  display: none;
+}
 /* ------------------------------------------------- */
 /* ---------------NAVBAR---------------------------- */
 /* ------------------------------------------------ */
@@ -83,6 +89,7 @@ img {
 .navbar__center-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .navbar__center-container__search-input {
   padding: 1px 5px;
@@ -203,7 +210,7 @@ img {
 /* ---------------SECTION---------------------------- */
 /* ------------------------------------------------ */
 .section {
-  width: calc(100vw - 250px);
+  width: 100%;
   margin: 24px 0px 16px 16px;
   display: flex;
   justify-content: flex-start;
@@ -215,11 +222,13 @@ img {
   background-color: transparent;
   margin: 0px 8px 20px 8px;
   cursor: pointer;
-  max-width: 290px;
+  /* max-width: 290px; */
+  width: 30%;
+  min-width: 190px;
 }
 .video__thumbnail {
-  width: 290px;
-  height: 180px;
+  width: 100%;
+  /* height: 180px; */
   background-color: #000;
 }
 
